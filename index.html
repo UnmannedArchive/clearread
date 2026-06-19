@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ClearRead — Accessible Article Reader</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>📖</text></svg>" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/open-dyslexic-regular.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lexend:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -1698,7 +1699,7 @@ function startReading() {
   metaRow.innerHTML = `<span>${mins} min read</span><span>${words.toLocaleString()} words</span><span>${state.paragraphs.length} paragraphs</span>`;
   generateSummary(text);
   window.scrollTo(0, 0);
-  setMode('rsvp');
+  setMode('standard');
 }
 
 function goHome() {
